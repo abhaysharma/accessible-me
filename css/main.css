@@ -97,6 +97,7 @@ footer {
 footer a{
   text-decoration: none;
   display: flex;
+  color: bisque;
   
 }
 footer a:hover{
