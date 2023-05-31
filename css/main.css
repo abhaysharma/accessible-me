@@ -101,7 +101,8 @@ footer a{
 }
 footer a:hover{
   background-color:rgb(124, 37, 73);
-padding-top: 50px;
-font-size: xx-large;
-color: beige;
+  padding-top: 50px;
+  font-size: xx-large;
+  color: beige;
+  
 }
