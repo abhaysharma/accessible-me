@@ -4,6 +4,43 @@
   --main-text-color: #002B5B;
   --link-color: #1A5F7A;
 }
+/* Layout adjustments */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+
+/* Responsive layout */
+@media screen and (min-width: 768px) {
+  .main-nav {
+    text-align: right;
+  }
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-content > section {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .contact-section {
+    flex-basis: 100%;
+  }
+}
+
 
 /* Global styles */
 body {
@@ -49,6 +86,24 @@ img {
   color: var(--main-text-color);
   text-decoration: none;
   font-size: 200%;
+}
+.centered-nav {
+  text-align: center;
+}
+
+.centered-nav ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.centered-nav li {
+  display: inline;
+  margin: 0 15px; /* Adjust the margin as needed */
+}
+
+.centered-nav a {
+  text-decoration: none;
 }
 
 /* Form styles */
