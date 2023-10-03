@@ -1,29 +1,73 @@
-body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
-  margin: 0;
-  padding: 0;
+/* Define color variables */
+:root {
+  --background-color: #A5D7E8;
+  --main-text-color: #002B5B;
+  --link-color: #1A5F7A;
+}
+/* Layout adjustments */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.main-nav {
+  text-align: center;
+}
+
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+
+/* Responsive layout */
+@media screen and (min-width: 768px) {
+  .main-nav {
+    text-align: right;
+  }
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-content > section {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .contact-section {
+    flex-basis: 100%;
+  }
+}
+
+
+/* Global styles */
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+/* Container styles */
 .container {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
+/* Image styles */
 img {
   width: 100%;
 }
 
+/* Navigation styles */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -39,13 +83,31 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: inherit;
+  color: var(--main-text-color);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 200%;
+}
+.centered-nav {
+  text-align: center;
 }
 
-form input,
-form textarea {
+.centered-nav ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.centered-nav li {
+  display: inline;
+  margin: 0 15px; /* Adjust the margin as needed */
+}
+
+.centered-nav a {
+  text-decoration: none;
+}
+
+/* Form styles */
+form input, form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -61,11 +123,12 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid var(--main-text-color);
   padding: 1rem;
   text-transform: uppercase;
 }
 
+/* Footer styles */
 .site-footer {
   padding: 2rem 0;
 }
