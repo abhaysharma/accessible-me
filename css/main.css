@@ -1,29 +1,35 @@
+/* Define color variables */
+:root {
+  --background-color: grey;
+  --main-text-color: black;
+  --link-color: #007acc;
+}
+
+/* Global styles */
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+/* Container styles */
 .container {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
+/* Image styles */
 img {
   width: 100%;
 }
 
+/* Navigation styles */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -39,13 +45,13 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: inherit;
+  color: var(--main-text-color);
   text-decoration: none;
   font-size: 1.25rem;
 }
 
-form input,
-form textarea {
+/* Form styles */
+form input, form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -61,11 +67,12 @@ form textarea {
 
 form button {
   background: none;
-  border: 2px solid black;
+  border: 2px solid var(--main-text-color);
   padding: 1rem;
   text-transform: uppercase;
 }
 
+/* Footer styles */
 .site-footer {
   padding: 2rem 0;
 }
