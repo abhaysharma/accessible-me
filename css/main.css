@@ -1,8 +1,8 @@
 /* Define color variables */
 :root {
-  --background-color: grey;
-  --main-text-color: black;
-  --link-color: #007acc;
+  --background-color: #A5D7E8;
+  --main-text-color: #002B5B;
+  --link-color: #1A5F7A;
 }
 
 /* Global styles */
