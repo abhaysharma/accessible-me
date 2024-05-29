@@ -48,6 +48,10 @@ img {
   text-align: center;
 }
 
+.main-nav ul li:hover {
+  color: #73C6B6;
+}
+
 .main-nav ul li a {
   display: block;
   color: inherit;
@@ -79,8 +83,7 @@ form button {
 }
 
 form button :hover {
-  background-color: rgb(15, 14, 14);
-  color: white;
+  color: #73C6B6;
 } 
 
 .site-footer {
