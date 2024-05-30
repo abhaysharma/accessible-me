@@ -13,17 +13,24 @@
 </head>
 
 <body>
+  <div>
+   <ul class="skip-links">
+      <li><a href="#nav">Skip to main nav</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+    </ul>
+  </div>
+
   <div class="container">
     <div class="site-header" id="goto-top">
       <h1>Jam Box Studios</h1>
-      <main class="main-nav" role="navigation">
+      <main class="main-nav" id="#nav" role="navigation">
         <ul>
-          <li><a href="/html/">Home</a></li>
-          <li><a href="/products/">Products</a></li>
+          <li><a href="/home/">Home</a></li>
+          <li><a href="/roducts/">Products</a></li>
           <li><a href="/reservation/">Reservation</a></li>
           <li><a href="/studio/">Studio</a></li>
         </ul>
-      </main>
+      </main id="#main">
       <img src="https://placekitten.com/1200/900" class="banner" 
       alt="web-setver-down-info" width="500" height="600">
     </div>
@@ -33,7 +40,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner" role="owner-information">
         <h2>Meet the owner</h2>
-        <ul>
+        <ul　itemscope itemtype="https://schema.org/Person">
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
